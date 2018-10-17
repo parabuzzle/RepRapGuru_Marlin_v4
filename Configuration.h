@@ -587,7 +587,7 @@
  * disastrous consequences. Use with caution and do your homework.
  *
  */
-#define Z_MIN_PROBE_ENDSTOP // modification for BLTouch
+//#define Z_MIN_PROBE_ENDSTOP // modification for BLTouch
 
 /**
  * Probe Type
@@ -665,7 +665,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 23  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 18  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 3   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 2.4   // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -764,7 +764,7 @@
 #define Z_MAX_POS 180 // Titan Areo Modification
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
-#//define MIN_SOFTWARE_ENDSTOPS // TEMP Setting
+#define MIN_SOFTWARE_ENDSTOPS
 // If enabled, axes won't move above MAX_POS in response to movement commands.
 #define MAX_SOFTWARE_ENDSTOPS
 
@@ -855,7 +855,7 @@
 
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION 30 // modification for BLtouch
-  #define RIGHT_PROBE_BED_POSITION 150 // modification for BLtouch
+  #define RIGHT_PROBE_BED_POSITION 170 // modification for BLtouch
   #define FRONT_PROBE_BED_POSITION 30 // modification for BLtouch
   #define BACK_PROBE_BED_POSITION 150 // modification for BLtouch
 
@@ -1028,9 +1028,9 @@
 #define PREHEAT_1_TEMP_BED     70
 #define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
 
-// ABS Pre-Heat
-#define PREHEAT_2_TEMP_HOTEND 225
-#define PREHEAT_2_TEMP_BED    100
+// PETG Pre-Heat
+#define PREHEAT_2_TEMP_HOTEND 220
+#define PREHEAT_2_TEMP_BED    85
 #define PREHEAT_2_FAN_SPEED    255 // Value from 0 to 255
 
 /**
